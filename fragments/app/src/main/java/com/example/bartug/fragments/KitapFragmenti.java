@@ -54,7 +54,9 @@ public class KitapFragmenti extends Fragment {
                 selectedImage=kitapResimleri.get(i);
                 startActivity(in);
             }
+
         });
+
 
 
 

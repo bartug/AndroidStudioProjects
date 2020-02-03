@@ -38,13 +38,7 @@ SharedPreferences.Editor mPrefsEditor1;
         sayac2 = mSharedPrefs1.getInt("counter1", 0);
         filmbutton.setText("film Buttona Tıklanma Sayısı" + sayac2);
 
-
-
-
-
     }
-
-
 
     public void KitaplarıGoster(View view){ //kitap fragmentini açıyorum.
         FragmentManager fragmentManager = getSupportFragmentManager();
