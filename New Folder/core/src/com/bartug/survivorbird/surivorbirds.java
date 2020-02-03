@@ -16,9 +16,9 @@ import java.util.Random;
 public class surivorbirds extends ApplicationAdapter {
 	SpriteBatch batch;
 	Texture background;
-	Texture bird;
+	Texture bird; //SpaceShip
 	Texture bee1;
-	Texture bee2;
+	Texture bee2; //Alliens
 	Texture bee3;
 
 	float birdX=0;
@@ -54,7 +54,7 @@ public class surivorbirds extends ApplicationAdapter {
 		bird=new Texture("dino-spaceship-flying-game-character.png");
 		bee1=new Texture("ufo_enemy_game_character.png");
 		bee2=new Texture("ufo_enemy_game_character.png");
-		bee3=new Texture("ufo_enemy_game_character.png");
+		bee3=new Texture("ufo_enemy_game_character.png");  //DRAW UFOS
 
 		distance=Gdx.graphics.getWidth()/2;
 		random = new Random();
@@ -89,12 +89,12 @@ public class surivorbirds extends ApplicationAdapter {
 	}
 
 	@Override
-	public void render () { //oyun devam ettiği sürece ne oluyorsa buraya
+	public void render () { //Game is running
 		batch.begin();
 		batch.draw(background,0,0,Gdx.graphics.getWidth(),Gdx.graphics.getHeight());
 		if(Gdx.input.justTouched()){
 
-				velocity=-Gdx.graphics.getHeight()*0.02f;
+				velocity=-Gdx.graphics.getHeight()*0.02f; //velocity is down , this idea work for me
 
 		}
 		if(gameState==1)
@@ -125,7 +125,7 @@ public class surivorbirds extends ApplicationAdapter {
 
 					enemyOffset[i]=(random.nextFloat())*(Gdx.graphics.getHeight()-200);
 					EnemyOffset2[i]=(random.nextFloat())*(Gdx.graphics.getHeight()-200);
-					EnemyOffset3[i]=(random.nextFloat())*(Gdx.graphics.getHeight()-200);
+					EnemyOffset3[i]=(random.nextFloat())*(Gdx.graphics.getHeight()-200); //Thats not sense
 				}else {
 					enemyX[i] = enemyX[i] - enemyVelocity;
 				}
@@ -201,7 +201,7 @@ public class surivorbirds extends ApplicationAdapter {
 		batch.draw(bird,birdX,birdY,Gdx.graphics.getWidth()/15,Gdx.graphics.getHeight()/10);
 		font.draw(batch,String.valueOf(score),100,200);
 		batch.end();
-		birdCircle.set(birdX+Gdx.graphics.getWidth()/30,birdY+Gdx.graphics.getHeight()/20,Gdx.graphics.getWidth()/30);
+		birdCircle.set(birdX+Gdx.graphics.getWidth()/40,birdY+Gdx.graphics.getHeight()/40,Gdx.graphics.getWidth()/40);
 		//shapeRenderer.begin(ShapeRenderer.ShapeType.Filled);
 		//shapeRenderer.setColor(Color.BLACK);
 		//shapeRenderer.circle(birdCircle.x,birdCircle.y,birdCircle.radius);
