@@ -1,0 +1,168 @@
+{
+  "categories": {
+    "weapon_category":{
+      "weapons":[
+      {
+          "isim": "AKM",
+          "id": 0,
+          "tipi": "AR",
+          "resim_url": "https://raw.githubusercontent.com/pubg/api-assets/master/Assets/Item/Weapon/Main/Item_Weapon_AK47_C.png",
+          "sarjor_boyut":"30" ,
+          "mermi_tip":"7.62mm",
+          "menzil":"380m" ,
+          "ates_hızı": "0.1s",
+          "mermi_hızı":"715m/s",
+          "yenileme_hızı":"2.9s" ,
+          "damage": {
+            "esas":"49" ,
+            "zırh0": "49",
+            "zırh1":"34.3" ,
+            "zırh2":"29.4" ,
+            "zırh3": "22.1",
+            "kask0":"115.2" ,
+            "kask1":"81" ,
+            "kask2":"69" ,
+            "kask3": "51.8"
+          }
+},{
+          "isim": "BerylM762",
+          "id": 1,
+          "tipi": "AR",
+          "resim_url": "https://raw.githubusercontent.com/pubg/api-assets/master/Assets/Item/Weapon/Main/Item_Weapon_BerylM762_C.png",
+          "sarjor_boyut": "30",
+          "mermi_tip":"7.62mm" ,
+          "menzil": "380m",
+          "mermi_hızı":"715m/s" ,
+          "ates_hızı":"0.086s" ,
+          "yenileme_hızı":"2.9s" ,
+          "damage": {
+            "esas":"47" ,
+            "zırh0":"47" ,
+            "zırh1": "32.9",
+            "zırh2": "28.2",
+            "zırh3": "21.2",
+            "kask0": "110.5",
+            "kask1": "77",
+            "kask2": "66",
+            "kask3":"49.7" 
+          }
+},
+{
+          "isim": "DP-28",
+          "id": 2,
+          "tipi": "LMG",
+          "resim_url": "https://raw.githubusercontent.com/pubg/api-assets/master/Assets/Item/Weapon/Main/Item_Weapon_DP28_C.png",
+          "sarjor_boyut":"47" ,
+          "mermi_tip":"7.62mm" ,
+          "menzil": "380m",
+          "mermi_hızı":"715m/s" ,
+          "ates_hızı": "0.109s",
+          "yenileme_hızı": "5.5s",
+          "damage": {
+            "esas":"51" ,
+            "zırh0":"51" ,
+            "zırh1":"35.7" ,
+            "zırh2": "30.6",
+            "zırh3":"23" ,
+            "kask0": "117.3",
+            "kask1":"82.11" ,
+            "kask2":"70.38" ,
+            "kask3": "52.8"
+          }
+},
+{
+          "isim": "SLR",
+          "id": 3,
+          "tipi": "DMR",
+          "resim_url": "https://raw.githubusercontent.com/pubg/api-assets/master/Assets/Item/Weapon/Main/Item_Weapon_FNFal_C.png",
+          "sarjor_boyut":"10" ,
+          "mermi_tip": "7.62mm",
+          "menzil":"500m" ,
+          "mermi_hızı":"840m/s",
+          "ates_hızı":"0.1s" ,
+          "yenileme_hızı":"3.68s" ,
+          "damage": {
+            "esas": "58",
+            "zırh0": "61",
+            "zırh1":"42.6" ,
+            "zırh2": "35.5",
+            "zırh3":"27.4" ,
+            "kask0":"136.3" ,
+            "kask1":"95.41" ,
+            "kask2":"81.78" ,
+            "kask3": "61.34"
+          }
+},
+{
+          "isim": "Groza",
+          "id": 4,
+          "tipi": "AR",
+          "resim_url": "https://raw.githubusercontent.com/pubg/api-assets/master/Assets/Item/Weapon/Main/Item_Weapon_Groza_C.png",
+          "sarjor_boyut":"30" ,
+          "mermi_tip":"7.62mm" ,
+          "menzil":"380m" ,
+          "mermi_hızı":"715m/s",
+          "ates_hızı":"0.08" ,
+          "yenileme_hızı":"3s" ,
+          "damage": {
+            "esas":"49" ,
+            "zırh0":"49" ,
+            "zırh1":"34.3" ,
+            "zırh2":"29.4" ,
+            "zırh3":"22.1" ,
+            "kask0":"115.2" ,
+            "kask1":"81" ,
+            "kask2":"69" ,
+            "kask3":"51.8" 
+          }
+},
+{
+          "isim": "Kar98k",
+          "id": 5,
+          "tipi": "SR",
+          "resim_url": "https://raw.githubusercontent.com/pubg/api-assets/master/Assets/Item/Weapon/Main/Item_Weapon_Kar98k_C.png",
+          "sarjor_boyut":"5" ,
+          "mermi_tip":"7.62mm" ,
+          "menzil":"500m" ,
+          "mermi_hızı":"760m/s" ,
+          "ates_hızı":"1.9s" ,
+          "yenileme_hızı":"4s" ,
+          "damage": {
+            "esas": "75",
+            "zırh0":"113" ,
+            "zırh1":"78.8" ,
+            "zırh2": "67.5",
+            "zırh3": "50.6",
+            "kask0":"187.5" ,
+            "kask1":"131.25" ,
+            "kask2":"112.5" ,
+            "kask3": "84.38"
+          }
+},
+{
+          "isim": "M24",
+          "id": 6,
+          "tipi": "SR",
+          "resim_url": "https://raw.githubusercontent.com/pubg/api-assets/master/Assets/Item/Weapon/Main/Item_Weapon_M24_C.png",
+          "sarjor_boyut":"5" ,
+          "mermi_hızı":"790m/s" ,
+          "mermi_tip":"7.62mm" ,
+          "menzil":"600m" ,
+          "ates_hızı":"1.8s" ,
+          "yenileme_hızı":"4.2s" ,
+          "damage": {
+            "esas":"79" ,
+            "zırh0": "119",
+            "zırh1":"83" ,
+            "zırh2": "71.1",
+            "zırh3": "53.3",
+            "kask0": "197.5",
+            "kask1": "138.25",
+            "kask2": "118.5",
+            "kask3": "88.88"
+          }
+}]
+}
+}
+}
+  
