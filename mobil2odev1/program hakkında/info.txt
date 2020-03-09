@@ -1,0 +1,16 @@
+mail yollama kısmı için ;https://www.mobilhanem.com/android-uygulamadan-telefon-acma-sms-atma-mail-atma-web-sitesini-tarayicida-acma/
+
+json parser için;https://abhiandroid.com/programming/json
+
+yararlandıgımm diğer kaynaklar;
+https://www.youtube.com/watch?v=KSX4zIhiZlM
+https://demonuts.com/android-parse-json-and-show-in-listview/
+https://github.com/sreekumarsh/android/tree/master/Sample%20ListView
+https://github.com/rohitsingh1992/RS_Android_APICalls_ListView/tree/master/ApiCallsInListView
+
+kısaca uygulama hakkında;
+api 28 kullanıyorum fakat 3.2.1 ile çalıştırdığımda çok alakasız hatalar aldım 3.2.1 de açılabilecek diye düşündüm 3.1.2 ile derledim 3.5+ ile de 
+çalışıyordu orayı çözümleyemedim. Çok farklı json parser ve listview aktarma örneğinde denedim farklı hatalar aldım. En son aşamam bu şekilde ilk activity de 
+listview e veriler gelip tıklandığında detaylarını görüntüleyebiliyoruz. Mail atabiliyoruz.
+
+2015280028 Berke Bartuğ Sevindik

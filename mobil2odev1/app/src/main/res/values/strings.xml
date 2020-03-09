@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">mobil2odev1</string>
+    <string name="string_id">Id:</string>
+    <string name="string_name">First Name:</string>
+    <string name="last_name">Last Name:</string>
+    <string name="email">E-mail:</string>
+</resources>
