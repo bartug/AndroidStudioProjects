@@ -12,6 +12,7 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
+import java.util.Random;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -30,7 +31,6 @@ public class main extends AppCompatActivity {
             @Override
             public void run() {
                 new Bilgiler().execute(Interface.JSONURL);
-                new Bilgiler().execute(Interface.JSONURL1);
             }
         });
 
@@ -58,9 +58,8 @@ public class main extends AppCompatActivity {
                 JSONObject jsonObject = new JSONObject(content);
                 JSONArray jsonArray=jsonObject.getJSONArray("data");
 
-                for(int i=0;i<jsonArray.length();i++)
-                {
-                    JSONObject kisiobje=jsonArray.getJSONObject(i);
+
+                    JSONObject kisiobje=jsonArray.getJSONObject(new Random().nextInt(jsonArray.length()));
                     arrayList.add(new ModelListView(   //
                             kisiobje.getString("first_name"),
                             kisiobje.getString("last_name"),
@@ -71,7 +70,7 @@ public class main extends AppCompatActivity {
 
 
                     ));
-                }
+
             } catch (JSONException e) {
                 e.printStackTrace();
             }

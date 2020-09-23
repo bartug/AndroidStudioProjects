@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menuTab"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="Hakkımızda" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/website_32px"
+            android:title="Web Sitemiz" />
+
+    </group>
+
+    <item android:title="İletişim">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share_26px"
+                android:title="Paylaş" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/mail"
+                android:title="Bize Ulaş!" />
+        </menu>
+    </item>
+    <item android:title="Sosyal Medya">
+        <menu>
+        <item
+            android:id="@+id/twitter"
+            android:icon="@drawable/twitter"
+            android:title="Twitter"/>
+        <item
+            android:id="@+id/instagram"
+            android:icon="@drawable/ig"
+            android:title="Instagram" />
+        <item
+                android:id="@+id/youtube"
+                android:icon="@drawable/youtube"
+                android:title="Youtube" />
+    </menu>
+    </item>
+</menu>

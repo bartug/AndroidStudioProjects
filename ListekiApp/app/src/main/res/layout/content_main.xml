@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorYellow"
+        android:textAlignment="viewEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:background="@color/colorPurple"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/firstItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dizi Tavsiyeleri" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/secondItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Film Tavsiyeleri" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/thirditem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belgesel Tavsiyeleri" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+<HorizontalScrollView
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="@+id/tablayout"
+    app:layout_constraintTop_toTopOf="@+id/viewpager"
+    app:layout_constraintStart_toStartOf="parent"
+    android:scrollbars="none"
+
+    android:theme="@style/ThemeOverlay.AppCompat.Light">
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+
+        >
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_1"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/colorPurple"
+            android:checkable="true"
+            android:text="Korku"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip2"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            app:chipBackgroundColor="@color/colorYellow"
+            android:textColor="@color/colorPurple"
+
+            android:text="Macera"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            app:chipBackgroundColor="@color/colorYellow"
+            android:textColor="@color/colorPurple"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+        android:text="Aksiyon"/>
+
+    </com.google.android.material.chip.ChipGroup>
+</HorizontalScrollView>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="409dp"
+        android:layout_height="625dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scroll"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
