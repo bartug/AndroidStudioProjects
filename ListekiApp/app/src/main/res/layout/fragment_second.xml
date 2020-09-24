@@ -6,10 +6,17 @@
     tools:context=".second">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="filmler"
-        android:textColor="@color/colorPurple"/>
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/secondView">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </androidx.core.widget.NestedScrollView>
 
 </FrameLayout>
