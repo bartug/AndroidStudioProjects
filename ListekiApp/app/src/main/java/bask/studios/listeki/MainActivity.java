@@ -43,11 +43,6 @@ public class MainActivity extends AppCompatActivity implements  NavigationView.O
         pager = findViewById(R.id.viewpager);
         mTabLayout = findViewById(R.id.tablayout);
 
-        scrol = findViewById(R.id.scroll);
-        chipGroup = findViewById(R.id.chipGroup);
-        chip1=findViewById(R.id.chip_1);
-        chip2=findViewById(R.id.chip2);
-        chip3=findViewById(R.id.chip3);
 
         firstItem = findViewById(R.id.firstItem);
         secondItem = findViewById(R.id.secondItem);

@@ -56,24 +56,24 @@
     app:layout_constraintStart_toStartOf="parent"
     android:scrollbars="none"
 
+
     android:theme="@style/ThemeOverlay.AppCompat.Light">
     <com.google.android.material.chip.ChipGroup
         android:id="@+id/chipGroup"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
-        android:theme="@style/ThemeOverlay.AppCompat.Light"
-
+         android:theme="@style/chiptheme"
+app:singleSelection="true"
         >
 
         <com.google.android.material.chip.Chip
-            android:id="@+id/chip_1"
+            android:id="@+id/chip1"
             style="@style/Widget.MaterialComponents.Chip.Filter"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:textAlignment="center"
+            app:chipBackgroundColor="@color/colorYellow"
             android:textColor="@color/colorPurple"
-            android:checkable="true"
             android:text="Korku"/>
 
         <com.google.android.material.chip.Chip
@@ -84,7 +84,6 @@
             android:textAlignment="center"
             app:chipBackgroundColor="@color/colorYellow"
             android:textColor="@color/colorPurple"
-
             android:text="Macera"/>
 
         <com.google.android.material.chip.Chip
@@ -94,8 +93,36 @@
             android:textAlignment="center"
             app:chipBackgroundColor="@color/colorYellow"
             android:textColor="@color/colorPurple"
-            style="@style/Widget.MaterialComponents.Chip.Choice"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
         android:text="Aksiyon"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip4"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            app:chipBackgroundColor="@color/colorYellow"
+            android:textColor="@color/colorPurple"
+            android:text="Romantik"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip5"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            app:chipBackgroundColor="@color/colorYellow"
+            android:textColor="@color/colorPurple"
+            android:text="Komedi"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip6"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            app:chipBackgroundColor="@color/colorYellow"
+            android:textColor="@color/colorPurple"
+
+            android:text="Drama"/>
 
     </com.google.android.material.chip.ChipGroup>
 </HorizontalScrollView>
